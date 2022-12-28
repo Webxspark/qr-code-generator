@@ -1,3 +1,8 @@
+/*
+    * This source code was submitted by B.Alan Christofer to Codechef development team
+    * Distribution of this source code without permission is illegal
+    * To claim a valid licence, please contact copyright@webxspark.com for more info
+*/
 var app = {
     _init_() {
         this.initEventListeners()
