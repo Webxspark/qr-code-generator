@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+    <!-- DuDialogAlert -->
+    <link rel="stylesheet" href="https://cdn.webxspark.com/plugins/css/duDialog.min.css">
+</head>
+
+<body>
+    <!--Main Navigation-->
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" target="_blank" href="/">
+                    <img src="https://webxspark.com/assets/images/header_logo-2.png" height="30" alt="" loading="lazy"
+                        style="margin-top: -3px;" />
+                </a>
+            </div>
+        </nav>
+
+        <div id="intro" class="p-5 text-center bg-light">
+            <h1 class="mb-3 h2">QR Code Generator</h1>
+        </div>
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main-->
+    <main class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 mb-4">
+                    <!--Section-->
+                    <section>
+                        
+                        <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="tab-link" data-mdb-toggle="pill" href="#pills-link"
+                                    role="tab" aria-controls="pills-link">Link</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="tab-text" data-mdb-toggle="pill" href="#pills-text" role="tab"
+                                    aria-controls="pills-text">Text</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="tab-whatsapp" data-mdb-toggle="pill" href="#pills-whatsapp"
+                                    role="tab" aria-controls="pills-whatsapp">Whatsapp</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="tab-phone" data-mdb-toggle="pill" href="#pills-phone"
+                                    role="tab" aria-controls="pills-phone">Phone</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="tab-email" data-mdb-toggle="pill" href="#pills-email"
+                                    role="tab" aria-controls="pills-email">E-mail</a>
+                            </li>
+                        </ul>
+                        
+                        <div class="tab-content container h-100">
+                            <div class="tab-pane fade show active row h-100" id="pills-link" role="tabpanel">
+                                <form class="col-12" id="form-1">
+                                    
+                                    <div class="form-outline mb-4">
+                                        <input type="url" name="data" class="form-control" />
+                                        <label class="form-label">URL</label>
+                                    </div>
+
+                                    <!-- Submit button -->
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary mb-4 w-100">Generate</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade row" id="pills-text" role="tabpanel">
+                                <form class="col-12" id="form-2">
+                                    
+                                    <div class="form-outline mb-4">
+                                        <textarea name="data" cols="30" rows="10" class="form-control"></textarea>
+                                        <label class="form-label">Message</label>
+                                    </div>
+
+                                    <!-- Submit button -->
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary mb-4 w-100">Generate</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade row" id="pills-whatsapp" role="tabpanel">
+                                <form class="col-12" id="form-3">
+                                    
+                                    <div class="form-outline mb-4">
+                                        <input type="tel" value="" name="data-pn" class="form-control" />
+                                        <label class="form-label">Phone Number</label>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <textarea name="data" cols="30" rows="5" class="form-control"></textarea>
+                                        <label class="form-label">Message</label>
+                                    </div>
+                                    <!-- Submit button -->
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary mb-4 w-100">Generate</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade row" id="pills-phone" role="tabpanel">
+                                <form class="col-12" id="form-4">
+                                    
+                                    <div class="form-outline mb-4">
+                                        <input type="tel" prepend="tel:" value="" name="data" class="form-control" />
+                                        <label class="form-label">Phone Number</label>
+                                    </div>
+                                    <!-- Submit button -->
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary mb-4 w-100">Generate</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade row" id="pills-email" role="tabpanel">
+                                <form class="col-12" id="form-5">
+                                    
+                                    <div class="form-outline mb-4">
+                                        <input type="email" prepend="mailto:" value="" name="data" class="form-control" />
+                                        <label class="form-label">Email Address</label>
+                                    </div>
+                                    <!-- Submit button -->
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary mb-4 w-100">Generate</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Section-->
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <!--Sidebar-->
+                    <section class="sticky-top" style="top: 80px;">
+                        <!--QR-code-->
+                        <section class="text-center border-bottom pb-4 mb-4">
+                            <div class="bg-image hover-overlay ripple mb-4" id="qr-image-container">
+                                <img src="./assets/svg/placeholder.svg" alt="qr-code" class="img-fluid" />
+                            </div>
+                            <a role="button" action="download" class="btn btn-primary" href="javascript:;">Download <i
+                                    class="fas fa-download ms-2"></i></a>
+                        </section>
+                        <!--QR-code-->
+                    </section>
+                    <!--Sidebar-->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Main-->
+
+
+    <!-- JQuery Plugin -->
+    <script src="https://cdn.webxspark.com/plugins/js/query.min.js"></script>
+    <!-- Wxp.js Plugin -->
+    <script src="https://cdn.webxspark.com/libraries/dev/wxp.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+    <!-- DuDialogAlert -->
+    <script src="https://cdn.webxspark.com/plugins/js/duDialog.min.js"></script>
+    <!-- Custom Javascript -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

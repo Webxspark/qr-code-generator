@@ -1,0 +1,58 @@
+/* Style the form */
+form#qr-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the input field and button */
+form#qr-form input[type="text"],
+form#qr-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form#qr-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+/* Style the QR code image container */
+div#qr-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the QR code image */
+div#qr-image-container img {
+    width: 100%;
+    height: 300px;
+}
+
+#intro {
+    /* Margin to fix overlapping fixed navbar */
+    margin-top: 50px;
+}
+
+@media (max-width: 991px) {
+    #intro {
+        /* Margin to fix overlapping fixed navbar */
+        margin-top: 37px;
+    }
+}
